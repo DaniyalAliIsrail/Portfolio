@@ -1,0 +1,118 @@
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Fira Sans', sans-serif;
+}
+
+:root {
+        --navdark: #fcfcfc;
+        --navtext: #6b7280;
+        --navtexthover: #0c0f15;
+        --navhoverbground: #d7d7d7;
+        --globalwhite: #ffffff;
+        --btnColor:#f9fafbc3;
+
+}
+
+/* nav-section */
+.background-color-custom{
+        background: rgb(219,215,251);
+background: linear-gradient(90deg, rgba(219,215,251,1) 0%, rgba(251,226,227,1) 35%, rgba(243,244,246,1) 100%);
+
+}
+
+.ulmainWrpapper {
+        background-color: var(--navdark);
+        border-radius: 26px;
+        width: 55%;
+}
+
+.ulmainWrpapper>li>a {
+        color: var(--navtext) !important;
+}
+
+.ulmainWrpapper>li>a:hover {
+        color: var(--navtexthover) !important;
+}
+
+.navbarSliders:hover {
+        border-radius: 16px;
+        background-color: var(--navhoverbground);
+}
+
+.parentImagewrapper {
+        height: 100px;
+        width: 100px;
+        border: 5px solid #ffffff;
+        border-radius: 50px;
+        /* object-fit: fill; */
+}
+
+/* .herosSection {
+        /* background: #bdc3c7; */
+        /* fallback for old browsers */
+        /* background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7); */
+        /* Chrome 10-25, Safari 5.1-6 */
+        /* background: linear-gradient(to left, #2c3e50, #bdc3c7); */
+        /* background: hsla(205, 46%, 30%, 1);
+
+background: linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(260, 29%, 36%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(260, 29%, 36%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(260, 29%, 36%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#295270", endColorstr="#524175", GradientType=1 );
+        min-height: 100vh;
+        max-width: auto; 
+} */
+
+.imageWrapper {
+        /* border: 1px solid red; */
+        height: 91px;
+        width: 96px;
+        max-width: 100%;
+        border-radius: 50px;
+        object-fit: cover;
+}
+
+.downloadButton {
+        background-color: var(--navtexthover) !important;
+        color: var(--globalwhite) !important;
+        width: 22%;
+}
+.downloadButton >a{
+        font-size: 1.3rem;
+        font-weight: 550;
+}
+.herosFont{
+        font-size: 34px;
+        line-height: 54px;
+        color:#111827;
+}
+.cvButton {
+        background-color: var(--navdark) !important;
+        color: var(--navtexthover) !important;
+        width: 22%;
+}
+.cvButton>a{
+        font-size: 1.3rem;
+        font-weight: 550;
+}
+.herosButton>a {
+        background-color: var(--btnColor) !important;
+        color: var(--globalwhite) !important;
+}
+.custom-width{
+width: 80% !important;
+}
+.hibtn{
+        position: relative;
+}
+.hibtnDiv{
+        position: absolute;
+        bottom: 1%;
+        left: 62%;
+        font-size: 30px;
+}

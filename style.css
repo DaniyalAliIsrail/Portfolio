@@ -17,10 +17,6 @@
 
 }
 
-
-/* animation */
-
-
 /* nav-section */
 
 .background-color-custom {
@@ -33,7 +29,6 @@
 .ulmainWrpapper {
         /* background-color: var(--navdark); */
         background-color:
-                /* From https://css.glass */
                 rgba(255, 255, 255, 0.02);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(11, 8, 8, 0.1);
@@ -54,12 +49,6 @@
 .ulmainWrpapper>li>a:hover {
         color: var(--navtexthover) !important;
 }
-
-.navbarSliders:hover {
-        border-radius: 16px;
-        background-color: var(--navhoverbground);
-}
-
 .parentImagewrapper {
         height: 100px;
         width: 100px;
@@ -67,8 +56,6 @@
         border-radius: 50px;
         /* object-fit: fill; */
 }
-
-
 .herosButton {
         display: flex;
         justify-content: center;
@@ -76,7 +63,6 @@
         flex-wrap: wrap;
         width: 100%;
 }
-
 .imageWrapper {
         /* border: 1px solid red; */
         height: 91px;
@@ -103,8 +89,8 @@
 }
 
 .herosFont {
-        font-size: 34px;
-        line-height: 50px;
+        font-size: 1.3rem;
+        line-height: 30px;
         color: #111827;
 }
 
@@ -155,9 +141,6 @@ h1 {
         color: #fff;
 }
 
-.lead {
-        /* color:#aaa; */
-}
 
 .wrapper {
         margin: 7vh

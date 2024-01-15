@@ -12,7 +12,7 @@
   <script src="https://kit.fontawesome.com/05b527225a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
-  
+
 
 </head>
 
@@ -21,15 +21,18 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top background-color-custom ">
       <div class="container">
-    <a class="navbar-brand d-lg-none text-white " href="#"></a>
+        <a class="navbar-brand d-lg-none text-white " href="#">
+          <img height="130" src="./assets/daniyalalilogo.png">
+        </a>
         <button class="navbar-toggler outline-none shadow-none" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
           aria-label="Toggle navigation" style="border: none;">
           <i class="fa-solid fa-bars-staggered display-3 text-dark"></i>
-         
+
         </button>
-    
-        <div class="collapse navbar-collapse justify-content-center align-items-center p-2 m-2 ml-auto" id="navbarNavDropdown">
+
+        <div class="collapse navbar-collapse justify-content-center align-items-center p-2 m-2 ml-auto"
+          id="navbarNavDropdown">
           <ul class="navbar-nav nav-ul ps-3 pe-3 pt-0 pb-0 ulmainWrpapper text-sm-center text-lg-center gap-2 w-auto">
             <li class="nav-item ps-2 pe-2 m-1 ">
               <a class="nav-link navbarSliders" aria-current="page" href="#">Home</a>
@@ -98,13 +101,21 @@
         <div class="container">
           <div class=" herosButton ">
 
-            <button class="downloadButton  rounded-pill border-0"><a>Contact me Here <span class="pt-1 ps-1"><i
-                    class="fa-solid fa-arrow-right fw-bold "></i></a></i></span></button>
-<a  href="path/to/your-resume.pdf" download="./resume/DaniyalAliResumedev-1.pdf" onclick="showToast()"
-  <button class="cvButton rounded-pill border-0">Download cv<span class="pt-1 ps-1"><i
-         class="fa-solid fa-download fw-bold "></i></i></span></button>
-</a>
-          
+            <button onclick="openWhatsApp()" class="downloadButton  rounded-pill border-0"> Contact me Here <span
+                  class="pt-1 ps-1">
+                  <i class="fa-solid fa-arrow-right fw-bold "></i>
+                </span>
+              </button>
+
+                  <!-- <button onclick="openWhatsApp()">Contact us on WhatsApp</button><a target="_blank" href="https://api.whatsapp.com/send?phone=03162141214&text=Hi">Send Message</a> -->
+
+
+
+            <a href="./resume/DaniyalAliResumedev-1.pdf" download="DevDaniyalAli" onclick="showToast()" <button
+              class="cvButton rounded-pill border-0">Download cv<span class="pt-1 ps-1"><i
+                  class="fa-solid fa-download fw-bold "></i></i></span></button>
+            </a>
+
 
             <a class="p-3 m-2 text-dark h5 rounded-pill bg-light fw-bold"><i class="fa-brands fa-linkedin"></i></a>
 
@@ -433,4 +444,5 @@
   integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/05b527225a.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 </html>

@@ -69,6 +69,10 @@
         border-radius: 50px;
         /* object-fit: fill; */
 }
+
+.custom-width{
+        width: 100%;
+}
 .herosButton {
         display: flex;
         justify-content: center;

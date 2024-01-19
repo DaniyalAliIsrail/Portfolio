@@ -21,10 +21,15 @@
 .project-card-btn{
         background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
+/* .navbar-fix{
+        position: relative;
+        top: 50;
+} */
 
 .background-color-custom {
         background: rgb(219, 215, 251);
         background: linear-gradient(90deg, rgba(219, 215, 251, 1) 0%, rgb(244, 212, 250) 35%, rgba(243, 244, 246, 1) 100%);
+      
 
 
 }

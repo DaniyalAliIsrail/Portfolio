@@ -29,14 +29,8 @@
 .background-color-custom {
         /* background: rgb(219, 215, 251);
         background: linear-gradient(90deg, rgba(219, 215, 251, 1) 0%, rgb(244, 212, 250) 35%, rgba(243, 244, 246, 1) 100%); */
-
-  width: 100%;
-  height: 100%;
-  --color: #E1E1E1;
-  background-color: #F3F3F3;
-  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
-  background-size: 55px 55px;
+        background-color: #cce6ff;
+background-image: linear-gradient(90deg, #cce6ff 0%, #fbd5ff 50%, #dcccfd 100%);
 
   
 }.ulmainWrpapper {

@@ -464,11 +464,17 @@
   <script>
 
     // Wait for 3 seconds, then show homepage content and hide loading screen
+// window.onload = function() {
+//     setTimeout(function(){
+//         document.getElementById('loading').style.display = 'none';
+//         document.getElementById('content').style.display = 'block';
+//     }, 100);
+// };
+
 window.onload = function() {
-    setTimeout(function(){
-        document.getElementById('loading').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
-    }, 1000);
+    // Jab window load ho jaye to loading screen hata do aur content dikhao
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
 };
 
    

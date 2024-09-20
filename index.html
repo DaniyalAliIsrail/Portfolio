@@ -16,8 +16,85 @@
 
 </head>
 
+<div id="loading">
+<div class="my-loader">
+  <div class="rubiks-cube">
+    <div class="face front">
+      <div style="background: #ff3d00;" class="cube"></div>
+      <div style="background: #ffeb3b;" class="cube"></div>
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #2196f3;" class="cube"></div>
+      <div style="background: #ffffff;" class="cube"></div>
+      <div style="background: #ffeb3b;" class="cube"></div>
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #2196f3;" class="cube"></div>
+      <div style="background: #ff3d00;" class="cube"></div>
+    </div>
+
+    <div class="face back">
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #ff3d00;" class="cube"></div>
+      <div style="background: #ffeb3b;" class="cube"></div>
+      <div style="background: #2196f3;" class="cube"></div>
+      <div style="background: #ffffff;" class="cube"></div>
+      <div style="background: #ff3d00;" class="cube"></div>
+      <div style="background: #ffeb3b;" class="cube"></div>
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #2196f3;" class="cube"></div>
+      
+    </div>
+    <div class="face left">
+      <div style="background: #ffeb3b;" class="cube"></div>
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #2196f3;" class="cube"></div>
+      <div style="background: #ff3d00;" class="cube"></div>
+      <div style="background: #ffffff;" class="cube"></div>
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #2196f3;" class="cube"></div>
+      <div style="background: #ffeb3b;" class="cube"></div>
+      <div style="background: #ff3d00;" class="cube"></div>
+    </div>
+    <div class="face right">
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #ff3d00;" class="cube"></div>
+      <div style="background: #ffeb3b;" class="cube"></div>
+      <div style="background: #2196f3;" class="cube"></div>
+      <div style="background: #ffffff;" class="cube"></div>
+      <div style="background: #ff3d00;" class="cube"></div>
+      <div style="background: #ffeb3b;" class="cube"></div>
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #2196f3;" class="cube"></div>
+    </div>
+    <div class="face top">
+      <div style="background: #2196f3;" class="cube"></div>
+      <div style="background: #ffeb3b;" class="cube"></div>
+      <div style="background: #ff3d00;" class="cube"></div>
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #ffffff;" class="cube"></div>
+      <div style="background: #ffeb3b;" class="cube"></div>
+      <div style="background: #ff3d00;" class="cube"></div>
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #2196f3;" class="cube"></div>
+    </div>
+    <div class="face bottom">
+      <div style="background: #ffffff;" class="cube"></div>
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #2196f3;" class="cube"></div>
+      <div style="background: #ff3d00;" class="cube"></div>
+      <div style="background: #ffeb3b;" class="cube"></div>
+      <div style="background: #4caf50;" class="cube"></div>
+      <div style="background: #2196f3;" class="cube"></div>
+      <div style="background: #ffffff;" class="cube"></div>
+      <div style="background: #ff3d00;" class="cube"></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
 <body class="background-color-custom">
- 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top  text-align-center background-color-custom">
       <div height="20" class="container">
         <a class="navbar-brand d-lg-none text-white inline-block " href="#">
@@ -55,7 +132,7 @@
       </div>
     </nav>
 
-    <div class="background-color-custom">
+    <div class="">
     <!-- Heros Section -->
     <section class="herosSection ">
       <div class="container-fluid pt-lg-4 pt-md-2">
@@ -385,6 +462,16 @@
 
 </div>
   <script>
+
+    // Wait for 3 seconds, then show homepage content and hide loading screen
+window.onload = function() {
+    setTimeout(function(){
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+    }, 1000);
+};
+
+   
     function showToast() {
       Toastify({
         text: "Resume downloaded!",

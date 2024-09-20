@@ -1,147 +1,232 @@
 * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Fira Sans', sans-serif;
-        text-decoration: none;
-        list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 :root {
-        --navdark: #fcfcfc;
-        --navtext: #6b7280;
-        --navtexthover: #0c0f15;
-        --navhoverbground: #d7d7d7;
-        --globalwhite: #ffffff;
-        --btnColor: #f9fafbc3;
+  --navdark: #fcfcfc;
+  --navtext: #6b7280;
+  --navtexthover: #0c0f15;
+  --navhoverbground: #d7d7d7;
+  --globalwhite: #ffffff;
+  --btnColor: #f9fafbc3;
 
 }
 
+
+
+.my-loader {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 100px auto;
+}
+
+.rubiks-cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: my-rotateCube 5s infinite linear;
+}
+
+.my-loader .face {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.my-loader .face.front {
+  transform: translateZ(100px);
+}
+.my-loader .face.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.my-loader .face.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.my-loader .face.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.my-loader .face.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.my-loader .face.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.my-loader .cube {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+@keyframes my-rotateCube {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  z-index: 8000;
+}
+
+
+/* Home page styling */
 
 .project-card-btn{
-        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 /* .navbar-fix{
-        position: relative;
-        top: 50;
+  position: relative;
+  top: 50;
 } */
 
 .background-color-custom {
-        /* background: rgb(219, 215, 251);
-        background: linear-gradient(90deg, rgba(219, 215, 251, 1) 0%, rgb(244, 212, 250) 35%, rgba(243, 244, 246, 1) 100%); */
-        background-color: #cce6ff;
+  /* background: rgb(219, 215, 251);
+  background: linear-gradient(90deg, rgba(219, 215, 251, 1) 0%, rgb(244, 212, 250) 35%, rgba(243, 244, 246, 1) 100%); */
+  background-color: #cce6ff;
 background-image: linear-gradient(90deg, #cce6ff 0%, #fbd5ff 50%, #dcccfd 100%);
 
-  
+
 }.ulmainWrpapper {
-        /* background-color: var(--navdark); */
-        background-color:
-                rgba(255, 255, 255, 0.02);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(11, 8, 8, 0.1);
-        backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(3.8px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        ;
-        border-radius: 26px;
-        width: 55%;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* background-color: var(--navdark); */
+  background-color:
+          rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(11, 8, 8, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  ;
+  border-radius: 26px;
+  width: 55%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
 }
 
 .ulmainWrpapper>li>a {
-        color: var(--navtext) !important;
+  color: var(--navtext) !important;
 }
 
 .ulmainWrpapper>li>a:hover {
-        color: var(--navtexthover) !important;
+  color: var(--navtexthover) !important;
 }
 .parentImagewrapper {
-        height: 100px;
-        width: 100px;
-        border: 5px solid #ffffff;
-        border-radius: 50px;
-        /* object-fit: fill; */
+  height: 100px;
+  width: 100px;
+  border: 5px solid #ffffff;
+  border-radius: 50px;
+  /* object-fit: fill; */
 }
 
 .custom-width{
-        width: 100%;
+  width: 100%;
 }
 .herosButton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .imageWrapper {
-        /* border: 1px solid red; */
-        height: 91px;
-        width: 96px;
-        max-width: 100%;
-        border-radius: 50px;
-        object-fit: cover;
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(214, 221, 226, 0.15) 0px 1px 3px 1px;
+  /* border: 1px solid red; */
+  height: 91px;
+  width: 96px;
+  max-width: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(214, 221, 226, 0.15) 0px 1px 3px 1px;
 
 }
 
 .downloadButton {
-        background-color: var(--navtexthover) !important;
-        color: var(--globalwhite) !important;
-        /* width: 22%; */
-        padding: 9px;
-        margin: 4px;
+  background-color: var(--navtexthover) !important;
+  color: var(--globalwhite) !important;
+  /* width: 22%; */
+  padding: 9px;
+  margin: 4px;
 
 }
 
 .downloadButton>a {
-        font-size: 1.3rem;
-        font-weight: 550;
+  font-size: 1.3rem;
+  font-weight: 550;
 }
 
 .herosFont {
-        font-size: 1.3rem;
-        line-height: 30px;
-        color: #111827;
+  font-size: 1.3rem;
+  line-height: 30px;
+  color: #111827;
 }
 
 .cvButton {
-        background-color: var(--navdark) !important;
-        color: var(--navtexthover) !important;
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-        padding: 11px 12px;
-        margin: 4px;
+  background-color: var(--navdark) !important;
+  color: var(--navtexthover) !important;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 11px 12px;
+  margin: 4px;
 }
 
 .cvButton>a {
-        font-size: 1.2rem;
-        font-weight: 550;
+  font-size: 1.2rem;
+  font-weight: 550;
 
 }
 
 
 
 .hibtn {
-        position: relative;
+  position: relative;
 }
 
 .hibtnDiv {
-        position: absolute;
-        bottom: 1%;
-        left: 62%;
-        font-size: 30px;
+  position: absolute;
+  bottom: 1%;
+  left: 62%;
+  font-size: 30px;
 }
 
 .card-wrapper {
-        width: 20vw;
-        height: 20vh;
-        border: 1px solid red;
+  width: 20vw;
+  height: 20vh;
+  border: 1px solid red;
 }
 
 .card-1 {
-        /* background-image: url(./assets/olx-card.png); */
-        background-size: 200px 200px;
-        background-repeat: no-repeat;
+  /* background-image: url(./assets/olx-card.png); */
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
 
 }
 
@@ -149,157 +234,157 @@ background-image: linear-gradient(90deg, #cce6ff 0%, #fbd5ff 50%, #dcccfd 100%);
 
 
 h1 {
-        color: #fff;
+  color: #fff;
 }
 
 
 .wrapper {
-        margin: 7vh
+  margin: 7vh
 }
 
 
 .card {
-        border: none;
-        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-        overflow: hidden;
-        border-radius: 20px;
-        min-height: 260px;
-        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
-        &.card-has-bg {
-                transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-                background-size: 100%;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-image: url(./assets/olx-card.png);
-                background-size: contain;      
-        }
-        .card-footer {
-                background: none;
-                border-top: none;
+  border: none;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 260px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  &.card-has-bg {
+          transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+          background-size: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(./assets/olx-card.png);
+          background-size: contain;      
+  }
+  .card-footer {
+          background: none;
+          border-top: none;
 
-                }
-                } 
-     
+          }
+          } 
+
 .btn-pink{
-        background-color: rgb(255, 194, 255);
-        border: none;
-        outline: none;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: rgb(255, 194, 255);
+  border: none;
+  outline: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 /* Time-line section */
 /* The actual timeline (the vertical ruler) */
 .main-timeline {
-  position: relative;
+position: relative;
 }
 
 /* The actual timeline (the vertical ruler) */
 .main-timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  background-color: #939597;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+content: "";
+position: absolute;
+width: 6px;
+background-color: #939597;
+top: 0;
+bottom: 0;
+left: 50%;
+margin-left: -3px;
 }
 
 /* Container around content */
 .timeline {
-  position: relative;
-  background-color: inherit;
-  width: 50%;
+position: relative;
+background-color: inherit;
+width: 50%;
 }
 
 /* The circles on the timeline */
 .timeline::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -13px;
-  background-color: #939597;
-  border: 5px solid #f5df4d;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+content: "";
+position: absolute;
+width: 25px;
+height: 25px;
+right: -13px;
+background-color: #939597;
+border: 5px solid #f5df4d;
+top: 15px;
+border-radius: 50%;
+z-index: 1;
 }
 
 /* Place the container to the left */
 .left {
-  padding: 0px 40px 20px 0px;
-  left: 0;
+padding: 0px 40px 20px 0px;
+left: 0;
 }
 
 /* Place the container to the right */
 .right {
-  padding: 0px 0px 20px 40px;
-  left: 50%;
+padding: 0px 0px 20px 40px;
+left: 50%;
 }
 
 /* Add arrows to the left container (pointing right) */
 .left::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+content: " ";
+position: absolute;
+top: 18px;
+z-index: 1;
+right: 30px;
+border: medium solid white;
+border-width: 10px 0 10px 10px;
+border-color: transparent transparent transparent white;
 }
 
 /* Add arrows to the right container (pointing left) */
 .right::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+content: " ";
+position: absolute;
+top: 18px;
+z-index: 1;
+left: 30px;
+border: medium solid white;
+border-width: 10px 10px 10px 0;
+border-color: transparent white transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -12px;
+left: -12px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .main-timeline::after {
-    left: 31px;
-  }
+/* Place the timelime to the left */
+.main-timeline::after {
+left: 31px;
+}
 
-  /* Full-width containers */
-  .timeline {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
+/* Full-width containers */
+.timeline {
+width: 100%;
+padding-left: 70px;
+padding-right: 25px;
+}
 
-  /* Make sure that all arrows are pointing leftwards */
-  .timeline::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
+/* Make sure that all arrows are pointing leftwards */
+.timeline::before {
+left: 60px;
+border: medium solid white;
+border-width: 10px 10px 10px 0;
+border-color: transparent white transparent transparent;
+}
 
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 18px;
-  }
+/* Make sure all circles are at the same spot */
+.left::after,
+.right::after {
+left: 18px;
+}
 
-  .left::before {
-    right: auto;
-  }
+.left::before {
+right: auto;
+}
 
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
+/* Make all right containers behave like the left ones */
+.right {
+left: 0%;
+}
 }

@@ -16,82 +16,6 @@
 
 </head>
 
-<div id="loading">
-<div class="my-loader">
-  <div class="rubiks-cube">
-    <div class="face front">
-      <div style="background: #ff3d00;" class="cube"></div>
-      <div style="background: #ffeb3b;" class="cube"></div>
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #2196f3;" class="cube"></div>
-      <div style="background: #ffffff;" class="cube"></div>
-      <div style="background: #ffeb3b;" class="cube"></div>
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #2196f3;" class="cube"></div>
-      <div style="background: #ff3d00;" class="cube"></div>
-    </div>
-
-    <div class="face back">
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #ff3d00;" class="cube"></div>
-      <div style="background: #ffeb3b;" class="cube"></div>
-      <div style="background: #2196f3;" class="cube"></div>
-      <div style="background: #ffffff;" class="cube"></div>
-      <div style="background: #ff3d00;" class="cube"></div>
-      <div style="background: #ffeb3b;" class="cube"></div>
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #2196f3;" class="cube"></div>
-      
-    </div>
-    <div class="face left">
-      <div style="background: #ffeb3b;" class="cube"></div>
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #2196f3;" class="cube"></div>
-      <div style="background: #ff3d00;" class="cube"></div>
-      <div style="background: #ffffff;" class="cube"></div>
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #2196f3;" class="cube"></div>
-      <div style="background: #ffeb3b;" class="cube"></div>
-      <div style="background: #ff3d00;" class="cube"></div>
-    </div>
-    <div class="face right">
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #ff3d00;" class="cube"></div>
-      <div style="background: #ffeb3b;" class="cube"></div>
-      <div style="background: #2196f3;" class="cube"></div>
-      <div style="background: #ffffff;" class="cube"></div>
-      <div style="background: #ff3d00;" class="cube"></div>
-      <div style="background: #ffeb3b;" class="cube"></div>
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #2196f3;" class="cube"></div>
-    </div>
-    <div class="face top">
-      <div style="background: #2196f3;" class="cube"></div>
-      <div style="background: #ffeb3b;" class="cube"></div>
-      <div style="background: #ff3d00;" class="cube"></div>
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #ffffff;" class="cube"></div>
-      <div style="background: #ffeb3b;" class="cube"></div>
-      <div style="background: #ff3d00;" class="cube"></div>
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #2196f3;" class="cube"></div>
-    </div>
-    <div class="face bottom">
-      <div style="background: #ffffff;" class="cube"></div>
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #2196f3;" class="cube"></div>
-      <div style="background: #ff3d00;" class="cube"></div>
-      <div style="background: #ffeb3b;" class="cube"></div>
-      <div style="background: #4caf50;" class="cube"></div>
-      <div style="background: #2196f3;" class="cube"></div>
-      <div style="background: #ffffff;" class="cube"></div>
-      <div style="background: #ff3d00;" class="cube"></div>
-    </div>
-  </div>
-</div>
-
-</div>
-
 
 
 <body class="background-color-custom">
@@ -113,13 +37,13 @@
               <a class="nav-link navbarSliders" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item ps-2 pe-2  m-1 ">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item ps-1 pe-1 m-1 ">
-              <a class="nav-link" href="#">Project</a>
+              <a class="nav-link" href="#project">Project</a>
             </li>
             <li class="nav-item ps-1 pe-1 m-1  ">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item ps-1 pe-1 m-1 ">
               <a class="nav-link" href="#">Experience</a>
@@ -198,7 +122,7 @@
       </div>
     </section>
     <!-- **************** About Section ** ******************* -->
-    <section class="container mt-5 p-3">
+    <section id="about" class="container mt-5 p-3">
       <div class=" w-75 mx-auto text-center lh-lg about-section">
         <div>
           <h3 class="fw-bold about-heading-wrapper">About Me</h3>
@@ -211,7 +135,7 @@
 
     <!--********Project section *********-->
 
-    <div class="container-fluid bg-trasparent my-4 p-5" style="position: relative;">
+    <div id="project" class="container-fluid bg-trasparent my-4 p-5" style="position: relative;">
       <h2 class="fw-bold about-heading-wrapper fs-1 text-center py-3">Projects</h2>
 
       <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 ">
@@ -225,6 +149,21 @@
               <h5 class="card-title">Building a MernStack Application using Material tailwind FrameWork  Crafting seamless experiences and dynamic features .
               </h5>
               <div class="d-grid gap-2 my-4"> <a target="_blank" href="https://contactbook-manage.netlify.app/" class="btn project-card-btn border-none text-dark fw-bold"> View Website</a> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm"> <img src="./assets/image.png">
+            <div class="card-body">
+              <div class="clearfix mb-3"> <a class="text-decoration-none" target="_blank" href="https://github.com/DaniyalAliIsrail/ReactPrime_Crud"><span class="float-start badge rounded-pill bg-dark text-white ">Github</span></a>
+                <!-- <span class="float-end badge  rounded-pill bg-dark text-white"><a>LinkedIn</a></span> -->
+              </div>
+              <h5 class="card-title">
+                Building an crud using React.js & Tailwind CSS! and react prime Crafting seamless experiences and dynamic
+                features .
+              </h5>
+              <div class="d-grid gap-2 my-4"> <a target="_blank" href="https://crud-task-01.netlify.app/" class="btn project-card-btn border-none text-dark fw-bold"> View Website</a> </div>
             </div>
           </div>
         </div>
@@ -471,11 +410,7 @@
 //     }, 100);
 // };
 
-window.onload = function() {
-    // Jab window load ho jaye to loading screen hata do aur content dikhao
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('content').style.display = 'block';
-};
+
 
    
     function showToast() {
